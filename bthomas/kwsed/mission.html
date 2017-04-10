@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="mission.css" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" type="text/css" href="ddmegamenu.css" />
+
+<style type="text/css">
+
+/*Additional CSS used in the demos*/
+
+h2.d{
+font-family:Georgia;
+}
+
+/* ######### Style for Glow Tabs Mega Menu ######### */
+
+.glowtheme{ /*additional mega drop down menu style for this theme*/
+background:#f3f7ff;
+-webkit-box-shadow: 5px 5px 5px #D6D6D6 inset;
+-moz-box-shadow: 5px 5px 5px #D6D6D6 inset;
+box-shadow: 0 0 15px #99b4ff inset;
+}
+
+#glowingtabs{
+width:100%;
+font-size:90%;
+line-height:normal;
+overflow: hidden;
+border-bottom: 1px solid #7e9fff; /*Add border strip to bottom of menu*/
+}
+
+#glowingtabs ul{
+float:left;
+list-style-type: none;
+margin:0;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#glowingtabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#glowingtabs a{
+float:left;
+background:url(glowtab-left.gif) no-repeat left top;
+margin:0;
+margin-right: 5px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#glowingtabs a span{
+float:left;
+display:block;
+background:url(glowtab.gif) no-repeat right top;
+padding: 8px 12px 5px 3px;
+font-weight:bold;
+color:#3B3B3B;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#glowingtabs a span {float:none;}
+/* End IE5-Mac hack */
+
+#glowingtabs a:hover span {
+color: black;
+}
+
+#glowingtabs a.selected{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs a.selected span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: black;
+}
+
+#glowingtabs a:hover{ /*onMouseover style*/
+background-position:0% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs a:hover span{ /*onMouseover style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+/* ######### Style for 3rd demo's mega menu ######### */
+
+.sitetheme{
+padding:0;
+-webkit-box-shadow: 0 0 8px gray;
+-moz-box-shadow: 0 0 8px gray;
+box-shadow: 0 0 8px gray;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+background:#eafbd6;
+}
+
+.sitetheme p, .sitetheme .column{
+padding:5px;
+width:auto;
+}
+
+.sitetheme .ulmenu a:hover{
+background:#b9df8c;
+}
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script src="ddmegamenu.js">
+
+/***********************************************
+* DD Mega Menu (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+<script>
+
+ddmegamenu.docinit({
+	menuid:'solidmenu',
+	dur:200
+})
+
+ddmegamenu.docinit({
+	menuid:'glowingtabs',
+	dur:300,
+	easing:'easeOutBack'
+})
+	
+ddmegamenu.docinit({
+	menuid:'javascriptkit',
+	dur:500,
+	trigger:'click',
+	easing:'easeInOutCirc'
+})
+
+
+</script>
+
+
+</head>
+<body style="background-image:url(image/kwsd-background4.png)">
+
+
+
+
+
+
+
+
+<div id="title-background">
+
+
+<div id="header">
+
+<div id="logo">
+<img src="image/kw-logo.png">
+</div>
+
+
+
+
+<div id="title">
+Knox-Warren Special Education District
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div id="navi"> 
+
+
+
+
+<div id="glowingtabs">
+<ul>
+<li><a href="index"><span>Home</span></a></li>
+<li><a href="about" rel="jkmenuv2"><span>About v</span></a></li>
+<li><a href="staff-resources"><span>Staff Resources</span></a></li>
+<li><a href="family-resources"><span>Family Resources</span></a></li>
+<li><a href="special-ed-resources"><span>Special ED Resources</span></a></li>
+</ul>
+</div>
+
+<!--
+<a id="glowingtabs" href="#" rel="jkmenuv2">Testing 1 2 3</a>
+-->
+
+<!--First mega menu (1) -->
+
+<div id="jkmenuv2" class="mega glowtheme">
+
+	<p style="margin:5px 0 10px 0"><b>Links:</b></p>
+
+	<div class="column">
+	<ul>
+	<li><a href="misson">Mission</a></li>
+	<li><a href="contact">Contact</a></li>
+	</ul>
+	</div>
+	<div class="column">
+	<ul>
+	<li><a href="http://www.javascriptkit.com"></a></li>
+	<li><a href="http://www.javascriptkit.com"></a></li>
+	<li><a href="http://www.javascriptkit.com"></a></li>
+	</ul>
+	</div>
+	<br style="clear:left" />
+	<p> </p>
+
+</div>
+
+<!--Second mega menu (1.1) -->
+
+<div id="freescriptsv2" class="mega glowtheme" style="width:150px">
+	<ul class="ulmenu">
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">JavaScript Clocks</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">JavaScript Scrollers</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Text Effects</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Password Protecting</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Form Validation</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Ajax Scripts</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Image Effects</a></li>
+		<li><a href="http://www.javascriptkit.com/cutpastejava.shtml">Link Effects</a></li>
+	</ul>
+</div>
+
+
+<!--Forth mega menu (2) -->
+
+
+
+
+
+
+</div>
+
+<div id="wrapper"> 
+
+
+<div id="paragraph-background">
+
+<div id="paragraph">
+
+
+</div> 
+
+</div> 
+
+
+<div id="links"> <a href="http://united.k12.il.us/" target="_blank"><img src="image/united.png" /></a>
+
+</div> 
+
+
+
+<div id="links"> <a href="http://www.mr238.org/" target="_blank"><img src="image/titans.png" /></a>
+
+</div> 
+
+<div id="links"> <a href="http://www.bluebullets.org/" target="_blank"><img src="image/knoxville.png" /></a>
+
+</div> 
+
+<div id="links"> <a href="http://www.d276.net/" target="_blank"><img src="image/atown-2016.png" /></a>
+
+</div> 
+
+<div id="links"> <a href="http://www.rowva.k12.il.us/" target="_blank"><img src="image/rowva-logo.png" /></a>
+
+</div> 
+
+
+<div id="links"> <a href="http://www.billtown.org/" target="_blank"><img src="image/Williamsfield-schools-logo.png" /></a>
+
+</div> 
+
+<div id="bb" class="footer"> 
+
+<br>
+
+<a href="index" target="_blank"> < Home -</a>
+ <a href="mission" target="_blank">Mission -</a>
+ 
+<a href="contact" target="_blank">Contact - </a>
+<a href="staff-resources" target="_blank"> Staff Resources - </a>
+<a href="family-resources" target="_blank">Family Resources - </a>
+<a href="special-ed-resources" target="_blank">Special ED Resources > </a>
+
+<br>
+<br>
+© 2017 Knox-Warren Special Education
+
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
